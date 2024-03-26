@@ -118,6 +118,17 @@ const Header = () => {
       
       {
         loggedInUser ?
+        <>
+        <nav>
+          <ul>
+          <li className="navButton">
+            <NavLink to='/'>Home</NavLink>
+          </li>
+          <li className="navButton">
+            <NavLink to='/questions'>Questions</NavLink>
+          </li>
+          </ul>
+        </nav>
         <div className="rowStyle">
           <p className="nameStyle">
             <Link to={`/user/${loggedInUser.userName}`}>{loggedInUser.userName}</Link>
@@ -128,11 +139,14 @@ const Header = () => {
               navigate('/');
             }}
           >Log Out</button>
-        </div> : 
+        </div></> : 
         <nav>
           <ul>
           <li className="navButton">
             <NavLink to='/'>Home</NavLink>
+          </li>
+          <li className="navButton">
+            <NavLink to='/questions'>Questions</NavLink>
           </li>
             <li className='navButton'>
               <NavLink to='/user/register' >Register</NavLink>
