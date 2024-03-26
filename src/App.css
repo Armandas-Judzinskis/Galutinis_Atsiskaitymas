@@ -1,0 +1,6 @@
+    body {
+      background-color: #c8ee87;
+      margin: 0; /* Išvalykite margines, kad būtų užpildytas visą langą */
+      padding: 0; /* Išvalykite postūmį, kad būtų užpildytas visą langą */
+      font-family: Arial, sans-serif; /* Pasirinkite norimą šriftą */
+    }

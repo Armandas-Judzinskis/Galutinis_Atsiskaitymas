@@ -37,6 +37,26 @@ const StyledSection = styled.section`
       color: red;
     }
   }
+
+  .button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #014251;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    }
+    .button:hover{
+      background-color:#128eaa;
+      color: #1d414f;
+    }
+
+
+
 `;
 
 const Register = () => {
@@ -142,7 +162,7 @@ const Register = () => {
             <p>{formik.errors.passwordRepeat}</p>
           }
         </div>
-        <input type="submit" value="Register" />
+        <input className="button" type="submit" value="Register" />
       </form>
       {
         sameNameError && <p>Username is invalid</p>
