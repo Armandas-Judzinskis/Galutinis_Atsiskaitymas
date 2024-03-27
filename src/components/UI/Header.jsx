@@ -56,10 +56,11 @@ const StyledHeader = styled.header`
     background-color: #014251;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
     }
     button:hover{
       background-color:#128eaa;
-      color: #ffffff;
+      color: #014251;
     }
 
   .navButton{
@@ -118,6 +119,17 @@ const Header = () => {
       
       {
         loggedInUser ?
+        <>
+        <nav>
+          <ul>
+          <li className="navButton">
+            <NavLink to='/'>Home</NavLink>
+          </li>
+          <li className="navButton">
+            <NavLink to='/questions'>Questions</NavLink>
+          </li>
+          </ul>
+        </nav>
         <div className="rowStyle">
           <p className="nameStyle">
             <Link to={`/user/${loggedInUser.userName}`}>{loggedInUser.userName}</Link>
@@ -128,11 +140,14 @@ const Header = () => {
               navigate('/');
             }}
           >Log Out</button>
-        </div> : 
+        </div></> : 
         <nav>
           <ul>
           <li className="navButton">
             <NavLink to='/'>Home</NavLink>
+          </li>
+          <li className="navButton">
+            <NavLink to='/questions'>Questions</NavLink>
           </li>
             <li className='navButton'>
               <NavLink to='/user/register' >Register</NavLink>
