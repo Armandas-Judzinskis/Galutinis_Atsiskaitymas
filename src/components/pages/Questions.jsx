@@ -9,20 +9,12 @@ const StyledSection = styled.section`
   
   > h1{
     text-align: center;
+    color: #014251;
   }
   > p {
     text-align: center;
+    color: rebeccapurple;
 
-    > a{
-      text-decoration: none;
-      padding: 5px 12px;
-      border: 1px solid black;
-      border-radius: 10px 5px;
-      transition: 0.3s;
-    }
-    > a:hover{
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
   }
   > div{
     margin: 0 auto;
@@ -31,6 +23,22 @@ const StyledSection = styled.section`
     gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
+
+  a{
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #014251;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    }
+    a:hover{
+      background-color:#128eaa;
+      color: #014251;;
+    }
 `;
 
 const Questions = () => {

@@ -56,10 +56,11 @@ const StyledHeader = styled.header`
     background-color: #014251;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
     }
     button:hover{
       background-color:#128eaa;
-      color: #ffffff;
+      color: #014251;
     }
 
   .navButton{

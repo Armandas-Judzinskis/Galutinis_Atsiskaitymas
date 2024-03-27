@@ -13,9 +13,17 @@ const StyledDiv = styled.div`
   gap: 10px;
   flex-direction: column;
   align-items: center;
+  background-color: #014251;
+  color: white;
+
+  > a{
+    text-decoration:none;
+    color: #f5906f;
+  }
   
   > h3{
     margin: 0;
+    color: #c8ee87;
   }
   > p{
     margin: 0;

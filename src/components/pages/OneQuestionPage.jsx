@@ -12,6 +12,11 @@ import { v4 as uuid } from 'uuid';
 const StyledSection = styled.section`
   padding-top: 50px;
 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   > div {
     border: 1px solid black;
     padding: 10px 20px;
@@ -19,16 +24,53 @@ const StyledSection = styled.section`
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    background-color:#1d414f;
+    color: white;
+    
     
     > h3, > p {
       margin: 0;
       text-align: justify;
     }
 
-    input, textarea {
+
+
+    input, textarea{
       width: 100%;
     }
   }
+
+  >form{
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+
+      >div{
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+      
+      
+}
+.button{
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #014251;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+    button:hover{
+      background-color:#128eaa;
+      color: #014251;
+    }
+
+
 `;
 
 const OneQuestionPage = () => {
@@ -136,7 +178,7 @@ const OneQuestionPage = () => {
                 />
                 {formik.touched.text && formik.errors.text && <p>{formik.errors.text}</p>}
               </div>
-              <button type="submit">Comment</button>
+              <button className="button" type="submit">Comment</button>
             </form>
           )}
         </>

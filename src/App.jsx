@@ -9,6 +9,7 @@ import Questions from './components/pages/Questions';
 import Header from './components/UI/Header';
 import AddNewQuestion from './components/pages/AddNewQuestion';
 import OneQuestionPage from './components/pages/OneQuestionPage';
+import Footer from './components/UI/Footer';
 const App = () => {
 
   const { loggedInUser } = useContext(UsersContext);
@@ -33,6 +34,7 @@ const App = () => {
           </Route>
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }

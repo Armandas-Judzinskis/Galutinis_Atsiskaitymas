@@ -16,6 +16,7 @@ const StyledSection = styled.section`
 
   > h1{
     font-size: 3rem;
+    color: #014251;
   }
 
   > form{
@@ -37,6 +38,23 @@ const StyledSection = styled.section`
       }
     }
   }
+
+  .button{
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #014251;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+    .button:hover{
+      background-color:#128eaa;
+      color: #014251;
+    }
 `;
 
 const AddNewQuestion = () => {
@@ -110,7 +128,7 @@ const AddNewQuestion = () => {
             <p>{formik.errors.description}</p>
           }
         </div>
-        <input type="submit" value="Add New Question" />
+        <input className="button" type="submit" value="Add New Question" />
       </form>
     </StyledSection>
   );
