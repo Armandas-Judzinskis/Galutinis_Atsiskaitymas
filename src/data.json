@@ -1,183 +1,110 @@
 {
   "users": [
     {
-      "id": "0",
-      "userName": "MrAdmin",
-      "password": "$2a$08$adKDmja0RQamK08GpqX1eugwnxRXiwc7sB0dI/gb5sTyQTQTBqUg6",
-      "passwordNoHash": "darNeHashintas0",
-      "role": "admin"
-    },
-    {
-      "id": "1",
-      "userName": "Edd",
-      "password": "$2a$08$7mCkD1B0rrseIn.hlrU.PuX99X4YDyo.eT1J7GFyiGKeqXmkWA9AW",
-      "passwordNoHash": "darNeHashintas123",
-      "role": "user"
-    },
-    {
-      "id": "670a432b-ffbf-40dc-919c-7479b2d4a005",
-      "userName": "Plačiakelnis",
-      "password": "$2a$08$Q/knWERPIcs3avnrWfkdluY/y57QR7vvmEqkthm49YVelFwQq.rZW",
-      "passwordNoHash": "mySnailGarry123@",
-      "role": "user"
-    },
-    {
-      "id": "743dd40e-f976-4124-a24f-62500bbab1b9",
-      "userName": "PetrasDidysis",
-      "password": "$2a$08$QuB3GA256QHPcPybV2OfcuuM5wyPUuuu7e9ELX9bZlQbRE/FRZj1u",
-      "passwordNoHash": "slaptasPass123@",
-      "role": "user"
-    },
-    {
-      "id": "ffd0bf60-598c-4d8c-bb0b-1be49b891440",
-      "userName": "Test",
-      "password": "$2a$08$OvzrnalYNcgpmltht20e7OTBbqYwh.vUW7hRWGuy1BX2JtPovjl8K",
-      "passwordNoHash": "Test@s123456",
-      "role": "user"
-    },
-    {
-      "id": "b609ad46-e4e4-46c4-bcd4-d3e3eac0f7f8",
-      "userName": "Lopas",
-      "password": "$2a$08$kTgtaK.FhCCdZgg5W8.Pq.hQcvRgs1gFDX2kfJsfromOyfIPxfzmy",
-      "passwordNoHash": "Labas159632@",
-      "role": "user"
-    },
-    {
-      "id": "813c5ca0-9875-4750-a6d0-3065108d9efa",
+      "id": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
       "userName": "Armandas",
-      "password": "$2a$08$R2xqIk/sPMGTQrxccidacuXZrhUSDB.YqfhIjC8h30YbaAysWyGei",
-      "passwordNoHash": "Abc123456?",
+      "password": "$2a$08$FGhmg0qey/qJa7lxiFJMJ.ueIrl2Am5WAxoeyLklNhXct4GF8fvK6",
+      "passwordNoHash": "LabaDiena123?",
+      "role": "user"
+    },
+    {
+      "id": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+      "userName": "MarkZuckerberg",
+      "password": "$2a$08$LMTMxMQDEPz.Cw53KH7Gx.pSx.Vf4llKWvowP94LManUGuTNdcI.e",
+      "passwordNoHash": "MarkZuckerberg123?",
+      "role": "user"
+    },
+    {
+      "id": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+      "userName": "BillGates",
+      "password": "$2a$08$I7RtOKnlZobEf5BsHgYtFOoToswAEA2z2cm3Ls3GcjboZeiQC/hMm",
+      "passwordNoHash": "BillGates123?",
+      "role": "user"
+    },
+    {
+      "id": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+      "userName": "ChatGPT",
+      "password": "$2a$08$heKfAmRcO6YIikHmfMU/BOpHfWK51dKIe5lSgEY4X06LF.SgEZ19S",
+      "passwordNoHash": "ChatGPT123?",
       "role": "user"
     }
   ],
   "questions": [
     {
-      "id": "0",
-      "userId": "1",
-      "title": "Title0",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
-    },
-    {
-      "id": "2",
-      "userId": "0",
-      "title": "Title2",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto.",
+      "id": "5b318865-3757-482a-a25e-a9f1d67eb03c",
+      "userId": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+      "title": "I am trying to move the page to a <div> element.",
+      "description": "I have tried the next code to no avail:\n\ndocument.getElementById(\"divFirst\").style.visibility = 'visible';\ndocument.getElementById(\"divFirst\").style.display = 'block';",
       "comments": [
         {
-          "id": "0",
-          "authorId": "0",
-          "text": "That's the smartest thing I've seen today."
+          "text": "scrollIntoView works well:\n\ndocument.getElementById(\"divFirst\").scrollIntoView();\nfull reference in the MDN docs:\nhttps://developer.mozilla.org/en-US/docs/Web/API/Element.scrollIntoView",
+          "id": "873bf428-3723-45a5-b015-caa21e4817e7",
+          "authorId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c"
         },
         {
-          "id": "1",
-          "authorId": "1",
-          "text": "Is that Latin?"
+          "text": "You can use an anchor to \"focus\" the div. I.e:\n\n<div id=\"myDiv\"></div>\nand then use the following javascript:\n\n// the next line is required to work around a bug in WebKit (Chrome / Safari)\nlocation.href = \"#\";\nlocation.href = \"#myDiv\";",
+          "id": "e2716a06-8f44-4846-933b-88664e73d288",
+          "authorId": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c"
+        },
+        {
+          "text": " I don't know, I'm too lazy to think, ask that question tomorrow.",
+          "id": "f5b76ac9-9823-46d8-ab92-2be1654e7373",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c",
+          "editedBy": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "editedAt": "2024-03-28T07:10:44.286Z"
         }
       ]
     },
     {
-      "id": "3",
-      "userId": "1",
-      "title": "Title3",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
-    },
-    {
-      "id": "e3781789-2988-48f0-8423-ba7ec3acab19",
-      "userId": "670a432b-ffbf-40dc-919c-7479b2d4a005",
-      "title": "Jelly Fish Hunting",
-      "description": "It's super fun!!!",
+      "id": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503",
+      "userId": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+      "title": "Differences between git pull and git fetch?",
+      "description": "What are the differences between git pull and git fetch?",
       "comments": [
         {
-          "text": "What equipment do you need to do that?",
-          "id": "f38b2262-cbae-41a7-a33c-2be8bc46227a",
-          "authorId": "0"
+          "text": "Sorry I don't know. Saddd....",
+          "id": "d19f043b-0017-445c-9e80-691fdb565af0",
+          "authorId": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503",
+          "editedBy": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+          "editedAt": "2024-03-28T06:57:59.303Z"
         },
         {
-          "text": "asfasfasfasfasf",
-          "id": "8b9b7a79-dded-4cf7-84ca-29a5978e40ad",
-          "authorId": "813c5ca0-9875-4750-a6d0-3065108d9efa",
-          "questionId": "e3781789-2988-48f0-8423-ba7ec3acab19",
-          "editedBy": "813c5ca0-9875-4750-a6d0-3065108d9efa",
-          "editedAt": "2024-03-26T18:50:45.912Z"
+          "text": "git fetch updates your remote-tracking branches under refs/remotes/<remote>/. This operation is safe to run at any time since it never changes any of your local branches under refs/heads.\n\ngit pull brings a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.",
+          "id": "f82ecfec-df56-4e7f-8316-9874f8a63b6c",
+          "authorId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503"
+        },
+        {
+          "text": "`git fetch` only updates the local repository, while `git pull` updates both the local repository and the working directory.",
+          "id": "1eacd0ca-b0f3-4bc4-9202-796e3e10af4b",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503"
         }
       ]
     },
     {
-      "id": "6608bb05-29f2-4687-985a-31066599491b",
-      "userId": "1",
-      "title": "hihihaha",
-      "description": "super not fun\n"
-    },
-    {
-      "id": "df3b4a1c-2881-433e-adf7-09ec971b72cc",
-      "userId": "0",
-      "title": "Nauja korta",
-      "description": "All hail admins",
+      "id": "cade9353-8de4-4974-a84d-d0cc6aac93fd",
+      "userId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+      "title": "Can I use comments inside a JSON file?",
+      "description": "Can I use comments inside a JSON file? If so, how?",
       "comments": [
         {
-          "id": "0",
-          "authorId": "0",
-          "text": "Yes, very smart idea"
-        },
-        {
-          "id": "1",
-          "authorId": "670a432b-ffbf-40dc-919c-7479b2d4a005",
-          "text": "NOOOO!!! Fight the system!!!"
-        },
-        {
-          "text": "Testasassasasasas",
-          "id": "4606c175-b99f-4346-b83f-d16ded8e8bc5",
-          "authorId": "ffd0bf60-598c-4d8c-bb0b-1be49b891440",
-          "questionId": "df3b4a1c-2881-433e-adf7-09ec971b72cc"
+          "text": "No, JSON does not support comments.",
+          "id": "d8e6d979-9258-4cf4-b2e6-b06599f603e4",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "cade9353-8de4-4974-a84d-d0cc6aac93fd"
         }
       ]
     },
     {
-      "id": "5931d1fd-ab34-4a07-8f86-025a8b89abc7",
-      "userId": "0",
-      "title": "Naujas",
-      "description": "kazkas nutiko kazkur?",
-      "comments": [
-        {
-          "text": "naujas comm",
-          "id": "5e1106ed-b40f-405c-96d3-abac8d52196c",
-          "authorId": "0"
-        },
-        {
-          "text": "Labas dienas",
-          "id": "ee4cdb03-3c82-4115-b9c9-468c01991ca4",
-          "authorId": "b609ad46-e4e4-46c4-bcd4-d3e3eac0f7f8",
-          "questionId": "5931d1fd-ab34-4a07-8f86-025a8b89abc7",
-          "editedBy": "b609ad46-e4e4-46c4-bcd4-d3e3eac0f7f8",
-          "editedAt": "2024-03-26T08:02:04.758Z"
-        }
-      ]
-    },
-    {
-      "id": "9fcec782-ede0-41bd-a553-46589c5b6675",
-      "userId": "ffd0bf60-598c-4d8c-bb0b-1be49b891440",
-      "title": "Klausimas 1",
-      "description": "Aprasymas 1",
-      "comments": [
-        {
-          "text": "Komentaras 1",
-          "id": "6755210a-bc1b-4010-91cc-a94e08d3ce1d",
-          "authorId": "ffd0bf60-598c-4d8c-bb0b-1be49b891440",
-          "questionId": "9fcec782-ede0-41bd-a553-46589c5b6675"
-        },
-        {
-          "text": "kkkkokooko",
-          "id": "7c6f1959-774b-47c6-8dba-f44fa32e1163",
-          "authorId": "813c5ca0-9875-4750-a6d0-3065108d9efa",
-          "questionId": "9fcec782-ede0-41bd-a553-46589c5b6675"
-        }
-      ]
-    },
-    {
-      "id": "c8fe9d70-9f73-4f88-a868-a12374511c1c",
-      "userId": "813c5ca0-9875-4750-a6d0-3065108d9efa",
-      "title": "Labas vakaras lietuva",
-      "description": "laba diena"
+      "id": "5092367b-baa6-4d8d-a0fc-b0ac7c3be504",
+      "userId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+      "title": "How to turn on my PC?",
+      "description": "I need help."
     }
   ]
 }
