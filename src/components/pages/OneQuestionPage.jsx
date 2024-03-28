@@ -76,7 +76,7 @@ const StyledSection = styled.section`
 const OneQuestionPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { loggedInUser } = useContext(UsersContext);
+  const { loggedInUser, users } = useContext(UsersContext);
   const { questions, setQuestions } = useContext(QuestionsContext);
   const question = questions.find(q => q.id === id);
 
