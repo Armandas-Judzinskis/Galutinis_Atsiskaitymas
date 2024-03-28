@@ -13,7 +13,6 @@ const StyledSection = styled.section`
   }
   > p {
     text-align: center;
-    color: rebeccapurple;
 
   }
   > div{
@@ -37,7 +36,7 @@ const StyledSection = styled.section`
     }
     a:hover{
       background-color:#128eaa;
-      color: #014251;;
+      color: #ffffff;
     }
 `;
 
