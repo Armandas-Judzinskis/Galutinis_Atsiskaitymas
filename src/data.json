@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+      "userName": "Armandas",
+      "password": "$2a$08$FGhmg0qey/qJa7lxiFJMJ.ueIrl2Am5WAxoeyLklNhXct4GF8fvK6",
+      "passwordNoHash": "LabaDiena123?",
+      "role": "user"
+    },
+    {
+      "id": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+      "userName": "MarkZuckerberg",
+      "password": "$2a$08$LMTMxMQDEPz.Cw53KH7Gx.pSx.Vf4llKWvowP94LManUGuTNdcI.e",
+      "passwordNoHash": "MarkZuckerberg123?",
+      "role": "user"
+    },
+    {
+      "id": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+      "userName": "BillGates",
+      "password": "$2a$08$I7RtOKnlZobEf5BsHgYtFOoToswAEA2z2cm3Ls3GcjboZeiQC/hMm",
+      "passwordNoHash": "BillGates123?",
+      "role": "user"
+    },
+    {
+      "id": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+      "userName": "ChatGPT",
+      "password": "$2a$08$heKfAmRcO6YIikHmfMU/BOpHfWK51dKIe5lSgEY4X06LF.SgEZ19S",
+      "passwordNoHash": "ChatGPT123?",
+      "role": "user"
+    }
+  ],
+  "questions": [
+    {
+      "id": "5b318865-3757-482a-a25e-a9f1d67eb03c",
+      "userId": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+      "title": "I am trying to move the page to a <div> element.",
+      "description": "I have tried the next code to no avail:\n\ndocument.getElementById(\"divFirst\").style.visibility = 'visible';\ndocument.getElementById(\"divFirst\").style.display = 'block';",
+      "comments": [
+        {
+          "text": "scrollIntoView works well:\n\ndocument.getElementById(\"divFirst\").scrollIntoView();\nfull reference in the MDN docs:\nhttps://developer.mozilla.org/en-US/docs/Web/API/Element.scrollIntoView",
+          "id": "873bf428-3723-45a5-b015-caa21e4817e7",
+          "authorId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c"
+        },
+        {
+          "text": "You can use an anchor to \"focus\" the div. I.e:\n\n<div id=\"myDiv\"></div>\nand then use the following javascript:\n\n// the next line is required to work around a bug in WebKit (Chrome / Safari)\nlocation.href = \"#\";\nlocation.href = \"#myDiv\";",
+          "id": "e2716a06-8f44-4846-933b-88664e73d288",
+          "authorId": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c"
+        },
+        {
+          "text": " I don't know, I'm too lazy to think, ask that question tomorrow.",
+          "id": "f5b76ac9-9823-46d8-ab92-2be1654e7373",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "5b318865-3757-482a-a25e-a9f1d67eb03c",
+          "editedBy": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "editedAt": "2024-03-28T07:10:44.286Z"
+        }
+      ]
+    },
+    {
+      "id": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503",
+      "userId": "eef4c682-472e-4397-9da1-e1cacfcab2bb",
+      "title": "Differences between git pull and git fetch?",
+      "description": "What are the differences between git pull and git fetch?",
+      "comments": [
+        {
+          "text": "Sorry I don't know. Saddd....",
+          "id": "d19f043b-0017-445c-9e80-691fdb565af0",
+          "authorId": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503",
+          "editedBy": "87320f5e-7cdb-4233-88f6-a881dea4e0d6",
+          "editedAt": "2024-03-28T06:57:59.303Z"
+        },
+        {
+          "text": "git fetch updates your remote-tracking branches under refs/remotes/<remote>/. This operation is safe to run at any time since it never changes any of your local branches under refs/heads.\n\ngit pull brings a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.",
+          "id": "f82ecfec-df56-4e7f-8316-9874f8a63b6c",
+          "authorId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503"
+        },
+        {
+          "text": "`git fetch` only updates the local repository, while `git pull` updates both the local repository and the working directory.",
+          "id": "1eacd0ca-b0f3-4bc4-9202-796e3e10af4b",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "f89119d4-c02d-4f2d-94e3-bf58e5ccd503"
+        }
+      ]
+    },
+    {
+      "id": "cade9353-8de4-4974-a84d-d0cc6aac93fd",
+      "userId": "959f35f6-f7b3-4ac6-b4ea-77bd6032e26c",
+      "title": "Can I use comments inside a JSON file?",
+      "description": "Can I use comments inside a JSON file? If so, how?",
+      "comments": [
+        {
+          "text": "No, JSON does not support comments.",
+          "id": "d8e6d979-9258-4cf4-b2e6-b06599f603e4",
+          "authorId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+          "questionId": "cade9353-8de4-4974-a84d-d0cc6aac93fd"
+        }
+      ]
+    },
+    {
+      "id": "5092367b-baa6-4d8d-a0fc-b0ac7c3be504",
+      "userId": "58fbe961-957f-42fa-87ce-cc42526fa8d3",
+      "title": "How to turn on my PC???",
+      "description": "I need help.",
+      "editedBy": "ChatGPT"
+    }
+  ]
+}
