@@ -33,7 +33,7 @@ const Comment = ({ comment, questionId }) => {
           <p>Comment by: {author.userName}</p>
           {
             editor &&
-            <p>Edited by <b>{editor.userName}</b> on <b>{comment.editedAt}</b></p>
+            <p>Edited by <b>{editor.userName}</b></p>
           }
           {
             isEditing ? (
