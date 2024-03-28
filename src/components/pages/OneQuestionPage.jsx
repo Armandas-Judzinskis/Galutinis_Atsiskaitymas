@@ -114,7 +114,7 @@ const OneQuestionPage = () => {
       setQuestions({
         type: QuestionsActionTypes.editQuestion,
         questionId: id,
-        payload: { title: editedTitle, description: editedDescription },
+        payload: { title: editedTitle, description: editedDescription, editedBy: loggedInUser.userName },
       });
     }
     setIsEditing(false);
@@ -141,6 +141,10 @@ const OneQuestionPage = () => {
               <>
                 <h3>{question.title}</h3>
                 <p>{question.description}</p>
+                {
+                  question.editedBy &&
+                  <p>Edited by <b>{question.editedBy}</b></p>
+                }
                 {loggedInUser.id === question.userId && (<>
                   <button onClick={() => setIsEditing(true)}>Edit</button>
                 <button
